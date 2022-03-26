@@ -11,8 +11,9 @@ body {
 .card-container {
   margin: 50px 0;
   display: grid;
-  gap: 50px;
+  gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: grid;
 }
 
 .cart-warning {
@@ -28,4 +29,27 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+#chooseForMe {
+  color: green;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: green;
+  padding: 15px;
+}
+#emptyCart {
+  margin-left: 20px;
+  color: red;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: red;
+  padding: 15px;
+}
+.shop-container{
+  display: grid;
+  grid-template-columns:4fr 2fr;
+}
+.summary-container{
+  text-align: center;
+  margin: 50px 0;
 }

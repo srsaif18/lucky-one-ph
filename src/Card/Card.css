@@ -1,10 +1,11 @@
 .card {
-  background-color: #fb6e6e;
+  background-color: #1f2833;
   height: 530px;
   width: 350px;
   padding: 15px;
   position: relative;
   justify-self: center;
+  color: #fff;
   clip-path: polygon(15% 0%, 100% 0, 100% 90%, 85% 100%, 0 100%, 0% 10%);
 }
 

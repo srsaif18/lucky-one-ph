@@ -8,10 +8,10 @@ import { CgCloseR } from "react-icons/cg";
 Modal.setAppElement("#root");
 
 function App() {
-  const [guns, setGuns] = useState([]);
+  const [bikes, setbikes] = useState([]);
   const [cart, setCart] = useState([]);
   const [modal, setModal] = useState(false);
-  console.log(guns);
+  console.log(bikes);
 
   const customStyles = {
     content: {
@@ -27,8 +27,8 @@ function App() {
     },
   };
 
-  const handleAddToCart = (gun) => {
-    const newCart = [...cart, gun];
+  const handleAddToCart = (bike) => {
+    const newCart = [...cart, bike];
     setCart(newCart);
   };
 
@@ -40,32 +40,61 @@ function App() {
     setModal(false);
   };
 
+  const emptyModal = () => {
+    setModal(false);
+  };
+
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
-      .then((data) => setGuns(data));
+      .then((data) => setbikes(data));
   }, []);
 
   return (
     <div>
       <Navbar cart={cart} toggleModal={toggleModal} />
-      <div className='card-container'>
-        {guns.map((gun) => (
-          <Card gun={gun} key={gun.id} handleAddToCart={handleAddToCart} />
-        ))}
+      <div className="shop-container">
+        <div className="card-container">
+          {bikes.map((bike) => (
+            <Card bike={bike} key={bike.id} handleAddToCart={handleAddToCart} />
+          ))}
+        </div>
+        <div className="summary-container">
+          <h1>Selected Bikes</h1>
+          {cart.length === 0 && (
+            <div className="cart-warning">
+              <p> Cart is empty </p>
+            </div>
+          )}
+          {cart.map((item) => (
+            <h1>Name: {item.name}</h1>
+          ))}
+          <button className="modal-close-button" onClick={closeModal}>
+            <h1 id="chooseForMe">Choose one for me</h1>
+          </button>
+          <button className="modal-close-button" onClick={emptyModal}>
+            <h1 id="emptyCart">Empty Cart</h1>
+          </button>
+        </div>
       </div>
       <Modal isOpen={modal} onRequestClose={closeModal} style={customStyles}>
-        <button className='modal-close-button' onClick={closeModal}>
+        <button className="modal-close-button" onClick={closeModal}>
           <CgCloseR size={25} />
         </button>
         {cart.length === 0 && (
-          <div className='cart-warning'>
+          <div className="cart-warning">
             <p> Cart is empty </p>
           </div>
         )}
         {cart.map((item) => (
           <h1>Name: {item.name}</h1>
         ))}
+        <button className="modal-close-button" onClick={closeModal}>
+          <h1 id="chooseForMe">Choose one for me</h1>
+        </button>
+        <button className="modal-close-button" onClick={emptyModal}>
+          <h1 id="emptyCart">Empty Cart</h1>
+        </button>
       </Modal>
     </div>
   );

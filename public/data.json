@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Suzuki Gixxer",
+    "img": "https://www.motorcyclevalley.com/photo/Suzuki%20Gixxer%20150.jpg",
+    "price": "2000.00"
+  },
+  {
+    "id": 2,
+    "name": "Suzuki Gixxer 155 2019",
+    "img": "https://www.motorcyclevalley.com/photo/Suzuki-Gixxer-155-2019.jpg",
+    "price": "2300.00"
+  },
+  {
+    "id": 3,
+    "name": "Suzuki Gixxer Carburetor",
+    "img": "https://www.motorcyclevalley.com/photo/New-Suzuki-Gixxer-Carburetor.jpg",
+    "price": "2900.00"
+  },
+  {
+    "id": 4,
+    "name": "Suzuki GSX R 150",
+    "img": "https://www.motorcyclevalley.com/photo/suzuki-gsx-r150.jpg",
+    "price": "3300.00"
+  },
+  {
+    "id": 5,
+    "name": "Suzuki Intruder ABS",
+    "img": "https://www.motorcyclevalley.com/photo/suzuki-intruder-1637476778.jpg",
+    "price": "3150.00"
+  },
+  {
+    "id": 6,
+    "name": "Yamaha XSR 155",
+    "img": "https://www.motorcyclevalley.com/photo/yamaha-xsr-155.jpg",
+    "price": "5400.00"
+  },
+  {
+    "id": 7,
+    "name": "Yamaha R15 V3",
+    "img": "https://www.motorcyclevalley.com/photo/Yamaha-R15-Dark-Knight.jpg",
+    "bullet": "12 Gauge",
+    "price": "4650.00"
+  },
+  {
+    "id": 8,
+    "name": "Yamaha Fazer Fi v2",
+    "img": "https://www.motorcyclevalley.com/photo/yamaha-fazer-fi-v2-2017-red.jpg",
+    "price": "2710.00"
+  },
+  {
+    "id": 9,
+    "name": "Yamaha Saluto SE",
+    "img": "https://www.motorcyclevalley.com/photo/Yamaha-Saluto-Matte-Green.jpg",
+    "price": "1290.00"
+  },
+  {
+    "id": 10,
+    "name": "Yamaha R15 V4 ",
+    "img": "https://www.motorcyclevalley.com/photo/yamaha-r15-v4-1632218326.jpg",
+    "price": "5900.00"
+  },
+  {
+    "id": 11,
+    "name": "Bajaj Pulsar NS160",
+    "img": "https://www.motorcyclevalley.com/photo/Bajaj-Pulsar-NS-160-abs.jpg",
+    "price": "750"
+  },
+  {
+    "id": 12,
+    "name": "Bajaj Avenger 160 ABS",
+    "img": "https://www.motorcyclevalley.com/photo/bajaj-avenger-160-abs-1637559230.jpg",
+    "price": "2233.00"
+  }
+]

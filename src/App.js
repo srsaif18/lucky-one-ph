@@ -3,6 +3,7 @@ import "./App.css";
 import Card from "./Card/Card";
 import Navbar from "./Navbar/Navbar";
 import Modal from "react-modal";
+import { resetState } from "react-modal/lib/helpers/ariaAppHider";
 
 Modal.setAppElement("#root");
 
@@ -18,11 +19,11 @@ function App() {
 
 
   const emptyCart = () => {
-    console.log('OK');
+    console.log('Hello');
   };
 
   const chooseItem = () => {
-    console.log('OK');
+    console.log(Math.floor(Math.random() * 13));
   };
 
   useEffect(() => {
@@ -48,7 +49,7 @@ function App() {
             </div>
           )}
           {cart.map((item) => (
-            <h1>Name: {item.name}</h1>
+            <h1>{item.name}</h1>
           ))}
           <button className="modal-close-button" onClick={chooseItem}>
             <h1 id="chooseForMe">Choose one for me</h1>
